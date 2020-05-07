@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cn.vuejs.org/js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p v-bind:title="title">能看到吗？</p>
+    </div>
+</body>
+<script>
+    let app = new Vue({
+        el:'#app',
+        data:{
+            title:"看到了"
+        }
+    })
+</script>
+</html>
